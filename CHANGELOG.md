@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl/compare/v1.0.1...v1.0.2) (2024-08-28)
+
+
+### Bug Fixes
+
+* Badge url ([db097ed](https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl/commit/db097edbf2a23934b649ffda68bf71909d8fbecd))
+* Readme ([7593fda](https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl/commit/7593fda0f699b59de7cb7201c08d5eca383c4d42))
+
 ## [1.0.1](https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl/compare/v1.0.0...v1.0.1) (2024-08-28)
 
 
