@@ -1,17 +1,8 @@
 import {BaseCommand} from '@flowcore/cli-plugin-config'
 import {StreamService} from '@flowcore/cli-plugin-core'
 import {Args, Flags} from '@oclif/core'
-import dayjs from 'dayjs'
-import isSameOrBefore from 'dayjs/plugin/isSameOrBefore.js'
-import utc from 'dayjs/plugin/utc.js'
 
 import {JsonlOutputService} from '../../services/jsonl.service.js'
-
-// eslint-disable-next-line import/no-named-as-default-member
-dayjs.extend(utc)
-
-// eslint-disable-next-line import/no-named-as-default-member
-dayjs.extend(isSameOrBefore)
 
 export const STREAM_ARGS = {
   STREAM: Args.string({description: 'stream url to connect to', required: true}),
