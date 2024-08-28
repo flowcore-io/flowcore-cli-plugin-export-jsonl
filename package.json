@@ -1,0 +1,85 @@
+{
+  "author": "flowcore-platform",
+  "bin": {
+    "scenario": "./bin/run.js"
+  },
+  "dependencies": {
+    "@flowcore/cli-plugin-config": "^1.0.5",
+    "@oclif/core": "^3",
+    "@oclif/plugin-help": "^6",
+    "@oclif/plugin-plugins": "^4",
+    "deepmerge": "^4.3.1",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
+    "js-yaml": "^4.1.0",
+    "zod": "^3.22.4"
+  },
+  "description": "Export data as jsonl files",
+  "devDependencies": {
+    "@oclif/prettier-config": "^0.2.1",
+    "@oclif/test": "^3",
+    "@types/chai": "^4",
+    "@types/deepmerge": "^2.2.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/mocha": "^10",
+    "@types/node": "^18",
+    "chai": "^4",
+    "eslint": "^8",
+    "eslint-config-oclif": "^5",
+    "eslint-config-oclif-typescript": "^3",
+    "eslint-config-prettier": "^9.1.0",
+    "mocha": "^10",
+    "oclif": "^4.4.12",
+    "shx": "^0.3.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "/bin",
+    "/dist",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/flowcore/flowcore-cli-plugin-export-jsonl",
+  "license": "MIT",
+  "main": "",
+  "name": "@flowcore/cli-plugin-export-jsonl",
+  "oclif": {
+    "bin": "export-jsonl",
+    "dirname": "export-jsonl",
+    "commands": "./dist/commands",
+    "devPlugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins",
+      "@flowcore/cli-plugin-config"
+    ],
+    "topicSeparator": " ",
+    "topics": {
+      "scenario": {
+        "description": "Export data as jsonl files"
+      }
+    }
+  },
+  "repository": "flowcore/flowcore-cli-plugin-export-jsonl",
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint . --ext .ts",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "yarn lint",
+    "prepack": "yarn build && oclif manifest && oclif readme",
+    "prepare": "yarn build",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif readme && git add README.md",
+    "update-schema": "rover graph introspect https://graph.api.staging.flowcore.io/graphql -o schema.gql"
+  },
+  "version": "0.0.0",
+  "bugs": "https://github.com/flowcore/flowcore-cli-plugin-export-jsonl/issues",
+  "keywords": [
+    "oclif"
+  ],
+  "types": "dist/index.d.ts",
+  "exports": "./lib/index.js",
+  "type": "module"
+}

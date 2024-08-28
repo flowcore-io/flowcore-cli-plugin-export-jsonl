@@ -1,0 +1,13 @@
+#nonk8s
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "flowcore-cli-plugin-export-jsonl"
+  description: Export data as jsonl files
+  annotations:
+    github.com/project-slug: flowcore-io/flowcore-cli-plugin-export-jsonl
+spec:
+  type: cli
+  owner: backend
+  system: system:public-tools
+  lifecycle: experimental
