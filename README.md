@@ -5,8 +5,7 @@ Export data as jsonl files
 
 [![Version](https://img.shields.io/npm/v/@flowcore/flowcore-cli-plugin-export-jsonl)](https://npmjs.org/package/@flowcore/flowcore-cli-plugin-export-jsonl)
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Build and Release](https://github.com/@flowcore/flowcore-cli-plugin-export-jsonl/actions/workflows/build.yml/badge.svg)](https://github.com/@flowcore/flowcore-cli-plugin-export-jsonl/actions/workflows/build.yml)
-
+![CI](https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl/actions/workflows/build.yml/badge.svg)
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
