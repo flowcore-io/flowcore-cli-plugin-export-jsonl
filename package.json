@@ -44,7 +44,7 @@
     "/dist",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/flowcore/flowcore-cli-plugin-export-jsonl",
+  "homepage": "https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl",
   "license": "MIT",
   "main": "",
   "name": "@flowcore/cli-plugin-export-jsonl",
@@ -64,7 +64,7 @@
       }
     }
   },
-  "repository": "flowcore/flowcore-cli-plugin-export-jsonl",
+  "repository": "https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl",
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts",
@@ -77,7 +77,7 @@
     "update-schema": "rover graph introspect https://graph.api.staging.flowcore.io/graphql -o schema.gql"
   },
   "version": "1.0.2",
-  "bugs": "https://github.com/flowcore/flowcore-cli-plugin-export-jsonl/issues",
+  "bugs": "https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl/issues",
   "keywords": [
     "oclif"
   ],
