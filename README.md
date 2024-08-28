@@ -12,14 +12,12 @@ Export data as jsonl files
 <!-- tocstop -->
 # Installation
 ```bash
-$ flowcore plugins install @flowcore/flowcore-cli-plugin-export-jsonl
+$ flowcore plugins install https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl
 ```
 
 # Usage
 <!-- usage -->
 ```sh-session
-$ flowcore export jsonl (--version)
-@flowcore/cli-plugin-export-jsonl/0.0.0 darwin-arm64 node-v18.18.0
 $ flowcore export jsonl --help 
 ```
 <!-- usagestop -->
