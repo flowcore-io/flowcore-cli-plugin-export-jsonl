@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl/compare/v1.0.2...v1.0.3) (2024-08-28)
+
+
+### Bug Fixes
+
+* Package ([9fd161b](https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl/commit/9fd161b0df9fe0e32a7371675d36e79e1a80b421))
+
 ## [1.0.2](https://github.com/flowcore-io/flowcore-cli-plugin-export-jsonl/compare/v1.0.1...v1.0.2) (2024-08-28)
 
 
